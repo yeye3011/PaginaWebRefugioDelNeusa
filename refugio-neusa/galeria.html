@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galería | Refugio del Neusa</title>
+    <meta
+      name="description"
+      content="Fotos y videos de nuestras cabañas, paisajes de páramo y experiencias junto al embalse del Neusa."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Galería | Refugio del Neusa" />
+    <meta
+      property="og:description"
+      content="Fotos y videos de nuestras cabañas, paisajes de páramo y experiencias junto al embalse del Neusa."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/traducciones.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/galeria-datos.js" defer></script>
+    <script src="js/galeria.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="topbar">
+        <div class="shell topbar__inner">
+          <div class="topbar__contact">
+            <a href="https://wa.me/573157660292" target="_blank" rel="noopener"
+              ><img class="icon" src="assets/icons/whatsapp-naranja.svg" alt="" aria-hidden="true" />+57 315
+              766 0292</a
+            >
+            <a href="mailto:info@refugiodelneusa.com"
+              ><img
+                class="icon"
+                src="assets/icons/correo-naranja.svg"
+                alt=""
+                aria-hidden="true"
+              />info@refugiodelneusa.com</a
+            >
+            <span
+              ><img class="icon" src="assets/icons/ubicacion-naranja.svg" alt="" aria-hidden="true" />Tausa,
+              Cundinamarca · Embalse del Neusa</span
+            >
+          </div>
+          <div class="topbar__social">
+            <a
+              aria-label="Instagram"
+              href="https://www.instagram.com/refugiodelneusa"
+              target="_blank"
+              rel="noopener"
+              ><img class="icon" src="assets/icons/instagram.svg" alt="" aria-hidden="true"
+            /></a>
+            <a
+              aria-label="Facebook"
+              href="https://www.facebook.com/RefugiodelNeusa/?locale=es_LA"
+              target="_blank"
+              rel="noopener"
+              ><img class="icon" src="assets/icons/facebook.svg" alt="" aria-hidden="true"
+            /></a>
+            <a
+              aria-label="YouTube"
+              href="https://www.youtube.com/@refugiodelneusa"
+              target="_blank"
+              rel="noopener"
+              ><img class="icon" src="assets/icons/youtube.svg" alt="" aria-hidden="true"
+            /></a>
+            <div class="language" id="lang-switch">
+              <button
+                class="language__btn"
+                type="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="lang-menu"
+                aria-label="Cambiar idioma"
+              >
+                <img class="icon" src="assets/icons/idioma.svg" alt="" aria-hidden="true" /><span
+                  class="language__code"
+                  data-i18n-skip
+                  >ES</span
+                ><svg class="language__chevron" viewBox="0 0 12 8" aria-hidden="true">
+                  <path
+                    d="M1 1.5 6 6.5 11 1.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <ul class="language__menu" id="lang-menu" hidden>
+                <li><button type="button" data-lang="es" lang="es" data-i18n-skip>Español</button></li>
+                <li><button type="button" data-lang="en" lang="en" data-i18n-skip>English</button></li>
+                <li><button type="button" data-lang="pt" lang="pt" data-i18n-skip>Português</button></li>
+                <li><button type="button" data-lang="fr" lang="fr" data-i18n-skip>Français</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navwrap">
+        <div class="shell navbar">
+          <a class="logo" href="index.html" aria-label="Ir al inicio"
+            ><img src="assets/img/logo.png" alt="Refugio del Neusa" width="360" height="233"
+          /></a>
+          <button class="hamburger" type="button" aria-expanded="false" aria-controls="main-navigation">
+            <span></span><span></span><span></span>
+            <b class="sr-only">Menú</b>
+          </button>
+          <nav id="main-navigation" class="navlinks" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="habitaciones.html">Habitaciones</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html" class="active" aria-current="page">Galería</a>
+            <a href="contactanos.html">Contáctanos</a>
+            <div class="navlinks__lang" role="group" aria-label="Idioma">
+              <button type="button" data-lang="es" lang="es" aria-label="Español">ES</button>
+              <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+              <button type="button" data-lang="pt" lang="pt" aria-label="Português">PT</button>
+              <button type="button" data-lang="fr" lang="fr" aria-label="Français">FR</button>
+            </div>
+          </nav>
+          <a class="button button--primary" href="https://wa.me/573157660292" target="_blank" rel="noopener"
+            >Reservar ahora</a
+          >
+        </div>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="page-hero page-hero--galeria">
+        <div class="shell">
+          <span><a href="index.html">Inicio</a>&nbsp;&nbsp; / &nbsp;&nbsp;<bdi>Galería</bdi></span>
+          <h1>Más cerca de las estrellas</h1>
+          <p>Un vistazo a nuestras cabañas, paisajes de páramo y experiencias en el embalse del Neusa.</p>
+        </div>
+      </section>
+      <section class="gallery-filters shell" id="gallery-filters" aria-label="Filtros de la galería">
+        <a href="https://www.instagram.com/refugiodelneusa" target="_blank" rel="noopener"
+          >Ver más en Instagram</a
+        >
+      </section>
+      <section class="section gallery">
+        <div class="shell">
+          <div class="gallery-grid" id="gallery-grid"></div>
+          <button class="button button--outline" type="button" id="gallery-more" hidden>
+            Cargar más fotos
+          </button>
+        </div>
+      </section>
+      <section class="section video-section" id="videos">
+        <div class="shell">
+          <div class="eyebrow">VIDEOS</div>
+          <h2>Vive el Refugio en movimiento</h2>
+          <p>Nuestros reels favoritos de Instagram y TikTok.</p>
+          <div>
+            <a
+              href="https://www.instagram.com/refugiodelneusa"
+              target="_blank"
+              rel="noopener"
+              style="
+                background-image:
+                  linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent),
+                  url(assets/img/galeria-cabana-bosque.webp);
+              "
+            >
+              <span><img class="icon" src="assets/icons/play.svg" alt="" aria-hidden="true" /></span>
+              <b>Neblina, sol y lluvia</b>
+            </a>
+            <a
+              href="https://www.instagram.com/refugiodelneusa"
+              target="_blank"
+              rel="noopener"
+              style="
+                background-image:
+                  linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent),
+                  url(assets/img/servicio-camping.webp);
+              "
+            >
+              <span><img class="icon" src="assets/icons/play.svg" alt="" aria-hidden="true" /></span>
+              <b>Embalse del Neusa</b>
+            </a>
+            <a
+              href="https://www.instagram.com/refugiodelneusa"
+              target="_blank"
+              rel="noopener"
+              style="
+                background-image:
+                  linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent),
+                  url(assets/img/galeria-amanecer.svg);
+              "
+            >
+              <span><img class="icon" src="assets/icons/play.svg" alt="" aria-hidden="true" /></span>
+              <b>Amanecer en la cabaña</b>
+            </a>
+            <a
+              href="https://www.instagram.com/refugiodelneusa"
+              target="_blank"
+              rel="noopener"
+              style="
+                background-image:
+                  linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent),
+                  url(assets/img/galeria-letrero.webp);
+              "
+            >
+              <span><img class="icon" src="assets/icons/play.svg" alt="" aria-hidden="true" /></span>
+              <b>Celebración de cumpleaños</b>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-cta">
+        <h2>¿Te imaginas aquí?</h2>
+        <p>Elige tu cabaña y reserva en pocos pasos.</p>
+        <a class="button button--primary" href="habitaciones.html">Reserva ahora</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer__grid">
+        <div class="footer__brand">
+          <h3>Refugio del Neusa</h3>
+          <span>CABAÑAS · 3.000 M S.N.M.</span>
+          <p>
+            Complejo ecoturístico a 3.000 m s.n.m. junto al embalse del Neusa. Cabañas, camping, bedping,
+            restaurante y pasadías, lejos del ruido de la ciudad.
+          </p>
+          <small>Registro Nacional de Turismo · RNT 126824</small>
+        </div>
+        <div>
+          <b>EXPLORA</b>
+          <a href="index.html">Inicio</a>
+          <a href="habitaciones.html">Habitaciones</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="galeria.html">Galería</a>
+          <a href="contactanos.html">Contáctanos</a>
+        </div>
+        <div>
+          <b>POLÍTICAS</b>
+          <button type="button" data-policy="Políticas del alojamiento">Políticas del alojamiento</button>
+          <button type="button" data-policy="Políticas de mascotas">Políticas de mascotas</button>
+          <button type="button" data-policy="Política de cancelación">Política de cancelación</button>
+          <button type="button" data-policy="Certificado RNT">Certificado RNT</button>
+        </div>
+        <div class="footer__contact">
+          <b>CONTACTO</b>
+          <a href="tel:+573157660292"
+            ><img
+              class="icon icon--tel"
+              src="assets/icons/telefono-naranja.svg"
+              alt=""
+              aria-hidden="true"
+            />+57 315 766 0292</a
+          >
+          <a href="mailto:info@refugiodelneusa.com"
+            ><img
+              class="icon"
+              src="assets/icons/correo-naranja.svg"
+              alt=""
+              aria-hidden="true"
+            />info@refugiodelneusa.com</a
+          >
+          <span
+            ><img class="icon" src="assets/icons/ubicacion-naranja.svg" alt="" aria-hidden="true" />Tausa,
+            Cundinamarca</span
+          >
+          <a class="button button--light" href="contactanos.html#como-llegar">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="shell footer__bottom">
+        <span>© 2026 Cabañas el Refugio del Neusa · Todos los derechos reservados</span>
+        <span>Español · English · Português · Français</span>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      id="reserve-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="reserve-title"
+      hidden
+    >
+      <div>
+        <button class="modal__close" type="button" aria-label="Cerrar" data-close>×</button>
+        <div class="eyebrow">RESERVA DIRECTA</div>
+        <h2 id="reserve-title" data-i18n-skip>Planea tu escapada</h2>
+        <p class="modal__summary" id="reserve-summary" hidden data-i18n-skip></p>
+        <p>Confirma disponibilidad y tarifa con nuestro equipo por WhatsApp.</p>
+        <a
+          class="button button--whatsapp"
+          id="reserve-whatsapp"
+          href="https://wa.me/573157660292"
+          target="_blank"
+          rel="noopener"
+          >Continuar por WhatsApp</a
+        >
+        <button class="button button--outline" type="button" data-close>Seguir explorando</button>
+      </div>
+    </div>
+
+    <div
+      class="modal"
+      id="policy-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="policy-title"
+      hidden
+    >
+      <div>
+        <button class="modal__close" type="button" aria-label="Cerrar" data-close>×</button>
+        <div class="eyebrow">POLÍTICAS</div>
+        <h2 id="policy-title" data-i18n-skip>Políticas</h2>
+        <p>Solicita el documento vigente a info@refugiodelneusa.com o por WhatsApp y te lo enviamos.</p>
+        <a
+          class="button button--primary"
+          id="policy-mail"
+          href="mailto:info@refugiodelneusa.com"
+          target="_blank"
+          rel="noopener"
+          >Solicitar por correo</a
+        >
+        <button class="button button--outline" type="button" data-close>Cerrar</button>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada" hidden>
+      <button class="lightbox__close" type="button" aria-label="Cerrar" data-close>×</button>
+      <button class="lightbox__nav lightbox__prev" type="button" aria-label="Foto anterior">
+        <span aria-hidden="true">‹</span>
+      </button>
+      <figure class="lightbox__stage">
+        <img src="" alt="Vista ampliada del Refugio" data-i18n-skip />
+        <figcaption class="lightbox__count" data-i18n-skip></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__next" type="button" aria-label="Foto siguiente">
+        <span aria-hidden="true">›</span>
+      </button>
+      <div class="lightbox__thumbs" aria-label="Más fotos"></div>
+    </div>
+  </body>
+</html>

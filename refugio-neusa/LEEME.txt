@@ -1,0 +1,46 @@
+REFUGIO DEL NEUSA
+Sitio web en HTML, CSS y JavaScript puros (sin React, sin Tailwind, sin instalar nada)
+
+CÓMO ABRIRLO
+Haz doble clic en index.html. Funciona sin internet porque las fuentes, las imágenes y los íconos van incluidos.
+Para publicarlo, sube la carpeta completa a cualquier hosting (Netlify, Vercel, GitHub Pages o el hosting de tu dominio).
+
+QUÉ HAY EN CADA PARTE
+index.html, habitaciones.html, servicios.html, galeria.html, contactanos.html: las cinco páginas.
+css/styles.css: todos los estilos. Al inicio de la sección 3 están los colores en variables (:root).
+js/main.js: menú, cambio de idioma, visor de fotos, ventanas de reserva y políticas, filtros, preguntas frecuentes y formulario.
+js/traducciones.js: textos en inglés, portugués y francés para el selector de idioma.
+js/galeria-datos.js: la lista de fotos de la galería (aquí se agregan fotos nuevas).
+js/galeria.js: arma la galería con esa lista (normalmente no hay que tocarlo).
+assets/img: fotos ya optimizadas. assets/icons: íconos. assets/fonts: DM Sans y Fraunces.
+
+LO ÚNICO QUE DEBES CONFIGURAR
+1. Formulario de contacto. Ahora mismo valida los campos y muestra el mensaje de éxito, pero NO envía el mensaje a ningún lado.
+   Para recibir los mensajes, abre js/main.js, busca FORM_ENDPOINT y pega la dirección de un servicio de formularios
+   (por ejemplo Formspree o Getform) o de tu propio servidor. Con eso empieza a enviar de verdad.
+2. Mapa. En Contáctanos hay una imagen en lugar del mapa de Google, tal como venía en el diseño. Los botones de Google Maps y Waze sí funcionan.
+3. Buscadores. Las páginas no tienen la etiqueta noindex, así que Google podrá indexarlas cuando las publiques.
+
+CÓMO AGREGAR FOTOS A LA GALERÍA
+Abre js/galeria-datos.js. Copia una línea de FOTOS_GALERIA y cambia la ruta de la imagen (src), el texto (alt) y la categoría.
+Si quieres un filtro nuevo, agrégalo en CATEGORIAS_GALERIA. La galería muestra 6 fotos y el botón "Cargar más fotos" aparece solo cuando hay más.
+Guarda las fotos nuevas en assets/img, de preferencia en .webp y de menos de 300 KB.
+
+CÓMO AGREGAR MÁS FOTOS A UNA HABITACIÓN ("Ver fotos")
+En habitaciones.html, cada tarjeta tiene un atributo data-lightbox con las fotos separadas por una barra vertical, por ejemplo:
+data-lightbox="assets/img/hab-uno.webp|assets/img/hab-dos.webp|assets/img/hab-tres.webp"
+Agrega las rutas que quieras. Hoy solo la cabaña con jacuzzi y la cabaña para 10 tienen dos fotos, las demás tienen una.
+
+IDIOMAS
+El selector de arriba a la derecha cambia entre Español, English, Português y Français, y recuerda la elección del visitante.
+Si cambias o agregas un texto en español, agrega esa misma frase (exacta) en js/traducciones.js con sus tres traducciones.
+Si una frase no está en ese archivo, se muestra en español. El mensaje que llega por WhatsApp siempre va en español.
+
+CÓMO EDITAR
+Textos y precios: abre la página .html que corresponda y cambia el texto (y su traducción en js/traducciones.js).
+Agregar una habitación: copia un bloque completo <article class="room-card"> en habitaciones.html y cámbiale los datos.
+El atributo data-categories define en qué filtros aparece (Parejas, Familias y grupos, Con jacuzzi, Económicas).
+Fondo de "Nuestros top 3": es la imagen assets/img/hero-habitaciones.webp, se cambia en css/styles.css buscando ".plans".
+Franja de aliados (Cámara de Comercio, ACOTUR, IDECUT y ProColombia): es la imagen assets/img/aliados.webp, se ve solo en la página de inicio, antes del pie de página.
+Ícono de la pestaña del navegador: favicon.png (192 px) y favicon-32.png (32 px), es el corazón con la montaña.
+Número de WhatsApp: está en todas las páginas como 573157660292 y en la constante WHATSAPP de js/main.js.
